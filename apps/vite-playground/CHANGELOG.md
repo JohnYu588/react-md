@@ -1,5 +1,14 @@
 # vite-playground
 
+## 0.0.3
+
+### Patch Changes
+
+- Updated dependencies [72d4630]
+  - @react-md/core@7.0.4
+  - @react-md/code@0.0.21
+  - @react-md/material-icons@7.0.5
+
 ## 0.0.2
 
 ### Patch Changes

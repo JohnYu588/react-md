@@ -1,5 +1,13 @@
 # react-md
 
+## 7.0.4
+
+### Patch Changes
+
+- 8146223: Fixed the a11y scss file not being included correctly
+- Updated dependencies [72d4630]
+  - @react-md/core@7.0.4
+
 ## 7.0.3
 
 ### Patch Changes

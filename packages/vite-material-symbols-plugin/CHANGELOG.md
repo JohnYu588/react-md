@@ -1,5 +1,16 @@
 # @react-md/vite-material-symbols-plugin
 
+## 2.1.1
+
+### Patch Changes
+
+- 1f32a73: Fixed the publishing behavior to include this package in the build and release steps.
+- 72d4630: Fixed the material symbols URL when using multiple families
+- Updated dependencies [72d4630]
+- Updated dependencies [8146223]
+  - @react-md/core@7.0.4
+  - react-md@7.0.4
+
 ## 2.1.0
 
 ### Minor Changes

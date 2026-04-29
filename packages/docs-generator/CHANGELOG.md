@@ -1,5 +1,13 @@
 # docs-generator
 
+## 0.0.21
+
+### Patch Changes
+
+- Updated dependencies [72d4630]
+  - @react-md/core@7.0.4
+  - @react-md/code@0.0.21
+
 ## 0.0.20
 
 ### Patch Changes

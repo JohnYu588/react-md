@@ -1,5 +1,11 @@
 # @react-md/core
 
+## 7.0.4
+
+### Patch Changes
+
+- 72d4630: Fixed the material symbols URL when using multiple families
+
 ## 7.0.3
 
 ### Patch Changes
