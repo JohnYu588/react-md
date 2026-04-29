@@ -1,0 +1,3 @@
+# I only want the dist, README.md, CHANGELOG.md, LICENSE and, package.json to be published
+/*
+!/dist/**

@@ -39,7 +39,7 @@
     "core-index-file": "pnpm --filter core create-index-file",
     "validate": "pnpm lint && pnpm typecheck",
     "changeset": "changeset",
-    "turbo-release": "pnpm turbo-s --filter=react-md --filter=@react-md/codemod --filter=@react-md/material-icons",
+    "turbo-release": "pnpm turbo-s --filter=react-md --filter=@react-md/codemod --filter=@react-md/material-icons --filter @react-md/vite-material-symbols-plugin",
     "clean-release-dist": "pnpm turbo-release clean-dist",
     "build-release-packages": "pnpm turbo-release build",
     "build-release": "pnpm core-index-file && pnpm build-release-packages",
