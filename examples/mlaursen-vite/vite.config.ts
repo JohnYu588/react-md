@@ -1,16 +1,22 @@
 /// <reference types="vitest/config" />
-import react from "@vitejs/plugin-react-swc";
+import { materialSymbolsPlugin } from "@react-md/vite-material-symbols-plugin";
+import babel from "@rolldown/plugin-babel";
+import react, { reactCompilerPreset } from "@vitejs/plugin-react";
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
-import tsconigPaths from "vite-tsconfig-paths";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [tsconigPaths(), react()],
+  plugins: [
+    materialSymbolsPlugin(),
+    react(),
+    babel({ presets: [reactCompilerPreset()] }),
+  ],
   resolve: {
     alias: {
       everything: resolve(import.meta.dirname, "src/_everything.scss"),
     },
+    tsconfigPaths: true,
   },
   test: {
     environment: "jsdom",
