@@ -209,21 +209,13 @@ If using [Material Symbols] instead of font or svg icons, import
 `@react-md/core/icon/configureMaterialSymbols` instead which just handles
 calling `configureIcons()` with the default icons:
 
-```diff fileName="src/index.tsx"
+```diff fileName="src/rmdConfig.tsx"
+ import { type ReactMDCoreConfiguration } from "@react-md/core/CoreProviders";
 +import "@react-md/core/icon/configureMaterialSymbols";
- import { CoreProviders } from "@react-md/core/CoreProviders";
- import { createRoot } from "react-dom/client"
 
--import "./rmdConfig.js";
- import App from "./App.js";
-
- const container = document.getElementById("root");
- const root = createRoot(container);
- root.render(
-   <CoreProviders>
-     <App />
-   </CoreProviders>
- );
+ export const rmdConfig: ReactMDCoreConfiguration = {
+   ssr: true,
+ };
 ```
 
 > !Success! Check out the [material symbols setup page] for some additional

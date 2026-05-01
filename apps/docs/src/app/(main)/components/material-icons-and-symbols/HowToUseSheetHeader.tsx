@@ -1,4 +1,3 @@
-// import { addAppToast } from "@/toasts.js";
 import { CopyToClipboard } from "@react-md/code/CopyToClipboard";
 import { TooltippedButton } from "@react-md/core/button/TooltippedButton";
 import { cssUtils } from "@react-md/core/cssUtils";
@@ -47,9 +46,6 @@ export function HowToUseSheetHeader(): ReactElement {
         aria-label="Share"
         tooltip="Copy url to clipboard"
         getCopyText={() => globalThis.location.href}
-        onCopied={() => {
-          // addAppToast({ toastId: "copied" });
-        }}
         iconSize="normal"
         buttonType="icon"
       >

@@ -14,6 +14,92 @@ keywords: [icon, symbol, material, fonts, google]
 > !Info! This page assumes you have gone through the initial installation steps
 > and would like to use [Material Symbols] throughout the app.
 
+## Default Icon Configuration
+
+If not done so already, update the default `react-md` icons to use the
+`MaterialSymbol` variants:
+
+```diff fileName="src/rmdConfig.tsx"
+ import { type ReactMDCoreConfiguration } from "@react-md/core/CoreProviders";
++import "@react-md/core/icon/configureMaterialSymbols";
+
+ export const rmdConfig: ReactMDCoreConfiguration = {
+   ssr: true,
+ };
+```
+
+Or configure the default icons manually using `configureIcons`:
+
+> !Info! This is what importing `@react-md/core/icon/configureMaterialSymbols` does.
+
+```diff fileName="src/rmdConfig.tsx"
+ import { type ReactMDCoreConfiguration } from "@react-md/core/CoreProviders";
++import { configureIcons } from "@react-md/core/icon/config.js";
++import { MaterialSymbol } from "@react-md/core/icon/MaterialSymbol";
++
++configureIcons({
++  back: <MaterialSymbol name="keyboard_arrow_left" />,
++  clear: <MaterialSymbol name="close_small" />,
++  close: <MaterialSymbol name="close" />,
++  checkbox: <MaterialSymbol name="check_box_outline_blank" />,
++  checkboxChecked: <MaterialSymbol name="check_box" />,
++  checkboxIndeterminate: <MaterialSymbol name="indeterminate_check_box" />,
++  dropdown: <MaterialSymbol name="arrow_drop_down" />,
++  error: <MaterialSymbol name="error" />,
++  expander: <MaterialSymbol name="keyboard_arrow_down" />,
++  forward: <MaterialSymbol name="keyboard_arrow_right" />,
++  menu: <MaterialSymbol name="menu" />,
++  notification: <MaterialSymbol name="notifications" />,
++  password: <MaterialSymbol name="visibility" />,
++  radio: <MaterialSymbol name="radio_button_unchecked" />,
++  radioChecked: <MaterialSymbol name="radio_button_checked" />,
++  remove: <MaterialSymbol name="cancel" />,
++  selected: <MaterialSymbol name="check" />,
++  sort: <MaterialSymbol name="arrow_upward" />,
++  upload: <MaterialSymbol name="upload" />,
++});
+
+ export const rmdConfig: ReactMDCoreConfiguration = {
+   ssr: true,
+ };
+```
+
+## Material Symbol Configuration
+
+The `MaterialSymbol` component defaults to the following configuration:
+
+```ts disableTransform
+export const MATERIAL_CONFIG: MaterialConfiguration = {
+  fill: 0,
+  weight: 400,
+  grade: 0,
+  opticalSize: 48,
+  family: "outlined",
+  // NOTE: This is for the default `FontIcon` component, so this can be ignored
+  // here
+  iconFamily: "filled",
+};
+```
+
+If your app uses different default configuration, update this object with the
+new defaults:
+
+```diff fileName="src/rmdConfig.tsx"
+ import { type ReactMDCoreConfiguration } from "@react-md/core/CoreProviders";
+ import "@react-md/core/icon/configureMaterialSymbols";
++import { MATERIAL_CONFIG } from "@react-md/core/icon/materialConfig";
+
++MATERIAL_CONFIG.fill = 1;
++MATERIAL_CONFIG.weight = 500;
++MATERIAL_CONFIG.grade = 200;
++MATERIAL_CONFIG.opticalSize = 24;
++MATERIAL_CONFIG.family = "filled";
+
+ export const rmdConfig: ReactMDCoreConfiguration = {
+   ssr: true,
+ };
+```
+
 ## Usage with [next.js]
 
 The easiest way to use Material Symbols with next.js is to create a list of
@@ -72,6 +158,7 @@ npm install -D @react-md/vite-material-symbols-plugin
  import { defineConfig } from 'vite'
  import react from '@vitejs/plugin-react-swc'
 +import { materialSymbolsPlugin } from "@react-md/vite-material-symbols-plugin";
++import "./src/rmdConfig.js";
 
  // https://vite.dev/config/
  export default defineConfig({
@@ -85,7 +172,43 @@ npm install -D @react-md/vite-material-symbols-plugin
  })
 ```
 
-See the [configuration]($GITHUB/packages/vite-material-symbols-plugin/README.md#Configuration) for additional plugin options.
+### Plugin Configuration
+
+The plugin defaults to only using the defined `MATERIAL_CONFIG` settings, but
+can be updated to support a range of `fill`, `weight`, `grade`, and
+`opticalSize`. Here's an example that would load all ranges with all families:
+
+```diff fileName="vite.config.ts"
+ import { resolve } from 'node:path'
+ import { defineConfig } from 'vite'
+ import react from '@vitejs/plugin-react-swc'
+ import { materialSymbolsPlugin } from "@react-md/vite-material-symbols-plugin";
+ import "./src/rmdConfig.js";
+
+ // https://vite.dev/config/
+ export default defineConfig({
+-  plugins: [react(), materialSymbolsPlugin()],
++  plugins: [
++    react(),
++    materialSymbolsPlugin({
++      fill: { min: 0, max: 1 },
++      grade: { min: -25, max: 200 },
++      weight: { min: 100, max: 700 },
++      opticalSize: { min: 20, max: 48 },
++      family: ["outlined", "rounded", "sharp"],
++    }),
++  ],
+   resolve: {
+     alias: {
+       everything: resolve(import.meta.dirname, 'src/_everything.scss'),
+     },
+   },
+ })
+```
+
+See the
+[configuration]($GITHUB/packages/vite-material-symbols-plugin/README.md#Configuration)
+for additional plugin options.
 
 [next.js]: https://nextjs.org
 [material symbols]: https://fonts.google.com/icons?icon.set=Material+Symbols
