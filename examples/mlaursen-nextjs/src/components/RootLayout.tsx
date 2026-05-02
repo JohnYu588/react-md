@@ -9,7 +9,7 @@ import { useExpandableLayout } from "@react-md/core/layout/useExpandableLayout";
 import { Sheet } from "@react-md/core/sheet/Sheet";
 import { type PropsWithChildren, type ReactElement } from "react";
 
-import { MainNavigation } from "./MainNavigation.jsx";
+import { MainNavigation } from "./MainNavigation";
 
 export function RootLayout({ children }: PropsWithChildren): ReactElement {
   const {

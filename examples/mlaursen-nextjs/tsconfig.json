@@ -1,23 +1,18 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "es5",
-    "module": "nodenext",
-    "sourceMap": true,
-    "jsx": "preserve",
-    "strict": true,
-    "esModuleInterop": true,
-    "moduleResolution": "nodenext",
-    "resolveJsonModule": true,
-    "downlevelIteration": true,
-    "noFallthroughCasesInSwitch": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "es2017",
+    "rootDir": ".",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "strict": true,
     "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
     "isolatedModules": true,
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -25,7 +20,8 @@
       }
     ],
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"],
+      "everything": ["./_everything.scss"]
     }
   },
   "include": [
@@ -34,7 +30,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "*.mjs"
+    "*.mjs",
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

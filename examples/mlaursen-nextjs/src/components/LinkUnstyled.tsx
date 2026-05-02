@@ -1,4 +1,4 @@
-import Link, { type LinkProps } from "next/link.js";
+import Link, { type LinkProps } from "next/link";
 import {
   type AnchorHTMLAttributes,
   type ReactElement,

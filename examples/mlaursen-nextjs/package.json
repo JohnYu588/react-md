@@ -39,6 +39,7 @@
     "@types/node": "^24.12.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
+    "babel-plugin-react-compiler": "^1.0.0",
     "eslint": "^9.24.0",
     "husky": "^9.1.7",
     "jest": "^30.2.0",
@@ -49,7 +50,7 @@
     "sass-embedded": "^1.86.3",
     "serve": "^14.2.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "typescript": "^6.0.3"
   },
   "lint-staged": {
     "**/*.{ts,tsx,scss,js,jsx,md,yml,json}": [

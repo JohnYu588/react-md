@@ -2,8 +2,8 @@ import { RootHtml } from "@react-md/core/RootHtml";
 import { Roboto_Flex } from "next/font/google";
 import { type ReactElement, type ReactNode } from "react";
 
-import { RootLayout } from "@/components/RootLayout.jsx";
-import { RootProviders } from "@/components/RootProviders.jsx";
+import { RootLayout } from "@/components/RootLayout";
+import { RootProviders } from "@/components/RootProviders";
 
 import "./layout.scss";
 import "./symbols.scss";
