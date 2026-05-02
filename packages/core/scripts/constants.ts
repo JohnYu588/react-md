@@ -10,6 +10,7 @@ export const PRIVATE_FILES = [
   "**/form/sliderUtils*",
   "**/form/useResizingTextArea*",
   "**/form/useSliderDraggable*",
+  "**/icon/configureMaterialSymbols*",
   "**/icon/getMaterialSymbolOption*",
   "**/interaction/utils*",
   "**/menu/MenuWidgetKeyboardProvider*",

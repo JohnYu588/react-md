@@ -136,7 +136,6 @@ export * from "@react-md/core/form/validation";
 export * from "@react-md/core/hoverMode/useHoverMode";
 export * from "@react-md/core/hoverMode/useHoverModeProvider";
 export * from "@react-md/core/icon/config";
-export * from "@react-md/core/icon/configureMaterialSymbols";
 export * from "@react-md/core/icon/FontIcon";
 export * from "@react-md/core/icon/getMaterialSymbolsUrl";
 export * from "@react-md/core/icon/IconRotator";

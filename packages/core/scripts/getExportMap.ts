@@ -20,7 +20,7 @@ const project = new Project({
 const types = new Set<string>();
 const variables = new Set<string>();
 const exportMap: Record<string, string> = {};
-files.forEach((file) => {
+for (const file of files) {
   const exportPath = file
     .replace("src", "@react-md/core")
     .replace(/\.tsx?$/, "");
@@ -31,7 +31,7 @@ files.forEach((file) => {
 
   for (const [name, declarations] of exportDeclarations) {
     if (
-      declarations.find(
+      declarations.some(
         (decl) =>
           Node.isTypeAliasDeclaration(decl) || Node.isInterfaceDeclaration(decl)
       )
@@ -43,7 +43,7 @@ files.forEach((file) => {
 
     exportMap[name] = exportPath;
   }
-});
+}
 
 const sortedExports = Object.fromEntries(
   alphaNumericSort(Object.entries(exportMap), {
