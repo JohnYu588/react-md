@@ -1,5 +1,12 @@
 # react-md
 
+## 7.0.5
+
+### Patch Changes
+
+- 8213903: Add test-utils exports
+- d9e2893: Fixed accidentally always setting the icons to material symbols
+
 ## 7.0.4
 
 ### Patch Changes
