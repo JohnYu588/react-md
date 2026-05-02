@@ -18,6 +18,7 @@
     "./test-utils/jest-globals": "./dist/test-utils/jest-globals/index.js",
     "./test-utils/vitest": "./dist/test-utils/vitest/index.js",
     "./test-utils": "./dist/test-utils/index.js",
+    "./configureMaterialSymbols": "./dist/configureMaterialSymbols.js",
     ".": {
       "sass": "./dist/_react-md.scss",
       "types": "./dist/index.d.ts",
@@ -27,7 +28,8 @@
   },
   "sideEffects": [
     "dist/**/*.scss",
-    "dist/test-utils/polyfills"
+    "dist/test-utils/polyfills/**/*.js",
+    "dist/configureMaterialSymbols.js"
   ],
   "scripts": {
     "dev": "npm-run-all --parallel build-esm-watch build-scss-watch build-types-watch",
