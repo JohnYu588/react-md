@@ -23,13 +23,13 @@
     "cnbuilder": "^3.1.0",
     "js-cookie": "^3.0.5",
     "next": "^16.2.6",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^16.2.4",
+    "@next/eslint-plugin-next": "^16.2.6",
     "@react-md/eslint-config": "workspace:*",
-    "@swc/core": "^1.15.30",
+    "@swc/core": "^1.15.33",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "@types/js-cookie": "^3.0.6",
     "@types/node": "^24.12.2",

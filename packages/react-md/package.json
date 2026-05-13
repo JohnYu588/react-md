@@ -71,13 +71,13 @@
   "devDependencies": {
     "@mlaursen/cli": "^0.1.2",
     "@swc/cli": "^0.8.1",
-    "@swc/core": "^1.15.30",
+    "@swc/core": "^1.15.33",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "@types/node": "^24.12.2",
     "npm-run-all2": "^8.0.2",
     "prettier": "^3.8.3",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "typescript": "npm:@typescript/typescript6@^6.0.0"
   },
   "peerDependencies": {

@@ -56,17 +56,17 @@
     "@types/node": "^24.12.2",
     "@typescript/native-preview": "beta",
     "@vitejs/plugin-react-swc": "^4.3.0",
-    "@vitest/coverage-v8": "^4.1.5",
+    "@vitest/coverage-v8": "^4.1.6",
     "concurrently": "^9.2.1",
     "eslint": "^9.39.4",
     "prettier": "^3.8.3",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5",
-    "rollup": "^4.60.2",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "rollup": "^4.60.3",
     "rollup-plugin-dts": "^6.4.1",
     "rollup-plugin-swc3": "^0.12.1",
-    "vite": "^8.0.10",
-    "vitest": "^4.1.5"
+    "vite": "^8.0.12",
+    "vitest": "^4.1.6"
   },
   "peerDependencies": {
     "@react-md/core": ">=7.0.4",
