@@ -509,7 +509,7 @@ $button-recommended-styles: map.merge(
     // buttons with multiple lines of text look terrible because of the large
     // line-height. You normally want to use a different component if the
     // clickable area has so much content to line-wrap
-    line-wrap: nowrap,
+    white-space: nowrap,
   )
 );
 
