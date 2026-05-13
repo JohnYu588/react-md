@@ -1,6 +1,6 @@
 # @react-md/material-icons
 
-This package converts each [material icon](https://fonts.google.com/icons?icon.set=Material+Icons) into a `React` component as inline SVG icons.
+This package converts each [material icon] into a `React` component as inline SVG icons.
 
 ## Documentation
 
@@ -8,22 +8,16 @@ Check out the [documentation site] to see all the available icons and in-depth u
 
 ## Installation
 
-With [npm]:
-
 ```sh
 npm install --save @react-md/core @react-md/material-icons
 ```
 
-With [pnpm]:
+```sh
+yarn add @react-md/core @react-md/material-icons
+```
 
 ```sh
 pnpm add @react-md/core @react-md/material-icons
-```
-
-With [yarn]:
-
-```sh
-yarn add @react-md/core @react-md/material-icons
 ```
 
 ## Add base styles
@@ -79,4 +73,5 @@ function Example() {
 }
 ```
 
-[documentation site]: https://react-md.dev/material-icons-and-symbols
+[material icon]: https://fonts.google.com/icons?icon.set=Material+Icons
+[documentation site]: https://react-md.dev/components/material-icons-and-symbols
