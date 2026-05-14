@@ -86,7 +86,7 @@
     "build-scss-watch": "pnpm build-scss --watch",
     "build": "concurrently 'pnpm build-esm' 'pnpm build-scss' 'pnpm build-types'",
     "export-map": "tsx scripts/getExportMap.ts",
-    "create-index-file": "tsx scripts/createIndexFile.ts",
+    "create-react-md": "tsx scripts/create-react-md.ts",
     "prepare-release": "pnpm clean-dist && pnpm build",
     "dev": "concurrently 'pnpm build-esm-watch' 'pnpm build-scss-watch' 'pnpm build-types-watch'"
   },

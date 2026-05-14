@@ -11,14 +11,9 @@
     "./colors": {
       "sass": "./dist/_colors.scss"
     },
-    "./test-utils/polyfills": {
-      "require": "./dist/test-utils/polyfills",
-      "default": "./dist/test-utils/polyfills/index.js"
-    },
-    "./test-utils/jest-globals": "./dist/test-utils/jest-globals/index.js",
-    "./test-utils/vitest": "./dist/test-utils/vitest/index.js",
-    "./test-utils": "./dist/test-utils/index.js",
     "./configureMaterialSymbols": "./dist/configureMaterialSymbols.js",
+    "./test-utils": "./dist/test-utils.js",
+    "./test-utils/*": "./dist/test-utils/*.js",
     ".": {
       "sass": "./dist/_react-md.scss",
       "types": "./dist/index.d.ts",

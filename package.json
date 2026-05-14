@@ -37,7 +37,7 @@
     "clean-root": "rm -rf .turbo coverage node_modules",
     "clean-examples": "rm -rf examples/*/node_modules",
     "core-export-map": "pnpm --filter core export-map",
-    "core-index-file": "pnpm --filter core create-index-file",
+    "create-react-md": "pnpm --filter core create-react-md",
     "validate": "pnpm lint && pnpm typecheck",
     "changeset": "changeset",
     "turbo-release": "pnpm turbo-s --filter=react-md --filter=@react-md/codemod --filter=@react-md/material-icons --filter @react-md/vite-material-symbols-plugin",

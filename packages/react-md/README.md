@@ -29,6 +29,65 @@ convenience. Some more information can be found
 - Left-to-right and right-to-left language support
 - Written and maintained in [Typescript]
 
+## Additional Exports
+
+There are a few exports from `@react-md/core` which must be imported separately
+since they have side effects or are for testing only:
+
+### `configureMaterialSymbols`
+
+This is the shortcut for configuring the default icons to use material symbols
+instead of font icons.
+
+```diff
+-import "@react-md/core/icon/configureMaterialSymbols";
++import "react-md/configureMaterialSymbols";
+```
+
+### `test-utils`
+
+```diff
+-export * from  "@react-md/core/test-utils";
++export * from  "react-md/test-utils";
+```
+
+### `test-utils/data-testid`
+
+```diff
+-import "@react-md/core/test-utils/data-testid";
++import "react-md/test-utils/data-testid";
+```
+
+### `test-utils/polyfills`
+
+```diff
+-import "@react-md/core/test-utils/polyfills";
++import "react-md/test-utils/polyfills";
+```
+
+> NOTE: You cannot pick and choose which polyfills to use unlike in
+> `@react-md/core`. It is all or nothing.
+
+### `test-utils/jest-globals`
+
+```diff
+-import "@react-md/core/test-utils/jest-globals/setup";
++import "react-md/test-utils/jest-globals/setup";
+
+-export * from  "@react-md/core/test-utils/jest-globals";
++export * from  "react-md/test-utils/jest-globals";
+```
+
+### `test-utils/vitest`
+
+```diff
+-import "@react-md/core/test-utils/vitest";
++import "react-md/test-utils/vitest/setup";
+
+-export * from  "@react-md/core/test-utils/vitest/setup";
++export * from  "react-md/test-utils/vitest";
+```
+
 [typescript]: https://www.typescriptlang.org/
 [www.w3.org]: https://www.w3.org/TR/wai-aria-practices
 [installation]: https://react-md.dev/getting-started/installation
