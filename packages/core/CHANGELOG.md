@@ -1,5 +1,11 @@
 # @react-md/core
 
+## 7.0.5
+
+### Patch Changes
+
+- fe4d0b6: Fixed the default button styles using `line-wrap: nowrap` instead of the correct `white-space: nowrap`
+
 ## 7.0.4
 
 ### Patch Changes

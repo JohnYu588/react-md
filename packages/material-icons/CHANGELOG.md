@@ -1,5 +1,13 @@
 # @react-md/material-icons
 
+## 7.0.6
+
+### Patch Changes
+
+- 4fffa79: Fixed invalid links in the README
+- Updated dependencies [fe4d0b6]
+  - @react-md/core@7.0.5
+
 ## 7.0.5
 
 ### Patch Changes
