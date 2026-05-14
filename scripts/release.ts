@@ -13,4 +13,6 @@ await release({
       "packages/vite-material-symbols-plugin",
     "react-md": "packages/react-md",
   },
+  postVersionCommand: "pnpm",
+  postVersionCommandArgs: ["install", "&&", "pnpm", "dedupe"],
 });
