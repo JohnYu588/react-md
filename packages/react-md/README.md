@@ -81,11 +81,11 @@ instead of font icons.
 ### `test-utils/vitest`
 
 ```diff
--import "@react-md/core/test-utils/vitest";
+-import "@react-md/core/test-utils/vitest/setup";
 +import "react-md/test-utils/vitest/setup";
 
--export * from  "@react-md/core/test-utils/vitest/setup";
-+export * from  "react-md/test-utils/vitest";
+-export * from "@react-md/core/test-utils/vitest";
++export * from "react-md/test-utils/vitest";
 ```
 
 [typescript]: https://www.typescriptlang.org/
