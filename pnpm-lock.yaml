@@ -1084,8 +1084,8 @@ importers:
         specifier: ^10.2.5
         version: 10.2.5
       react-md:
-        specifier: '>=7.0.4'
-        version: 7.0.4(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6)
+        specifier: '>=7.0.6'
+        version: 7.0.6(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6)
     devDependencies:
       '@react-md/core':
         specifier: workspace:*
@@ -3038,8 +3038,8 @@ packages:
     peerDependencies:
       prettier: '*'
 
-  '@react-md/core@7.0.4':
-    resolution: {integrity: sha512-uz+lmOKM7Fr7pnk93JxLfD51UtROgUI+15lPEEee7Vg+ZinrCsiU3qCanDAnKf7dHj5wugzUOLiBLLHHHiet2w==}
+  '@react-md/core@7.0.5':
+    resolution: {integrity: sha512-E7CCFFRKORhj69x6lXCvcMH4o8SbZNdzo5AS3B/HF2/QwA5OKHhXdTafNLM0KNMQGT6KmVnA5PPAGN46rNRT7w==}
     peerDependencies:
       '@jest/globals': '>= 29 <=31'
       '@jest/types': '>= 29 <=31'
@@ -8078,8 +8078,8 @@ packages:
   react-is@19.2.6:
     resolution: {integrity: sha512-XjBR15BhXuylgWGuslhDKqlSayuqvqBX91BP8pauG8kd1zY8kotkNWbXksTCNRarse4kuGbe2kIY05ARtwNIvw==}
 
-  react-md@7.0.4:
-    resolution: {integrity: sha512-QK81mDxNcaKsR4uYoL27WcgBNHgP8ApHfsdQupnt/cD9+hquSQngkGzKOCn8FP+Nb9p/8MS9xkXbEbRVwJwsCw==}
+  react-md@7.0.6:
+    resolution: {integrity: sha512-ZK2hEGk9Uc/isWM/i5MWyO1cuX5uLYNjgbUZv/eJhS5nVeKvxvGnV4bBDWoSM32HhFZ5Wh18i/c9iGQ3GQgYxQ==}
     peerDependencies:
       '@jest/globals': '>= 29 <=31'
       '@jest/types': '>= 29 <=31'
@@ -12014,7 +12014,7 @@ snapshots:
       make-synchronized: 0.8.0
       prettier: 3.8.3
 
-  '@react-md/core@7.0.4(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6)':
+  '@react-md/core@7.0.5(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6)':
     dependencies:
       cnbuilder: 3.1.0
       nanoid: 5.1.9
@@ -17722,9 +17722,9 @@ snapshots:
 
   react-is@19.2.6: {}
 
-  react-md@7.0.4(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6):
+  react-md@7.0.6(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6):
     dependencies:
-      '@react-md/core': 7.0.4(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6)
+      '@react-md/core': 7.0.5(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6)
     optionalDependencies:
       '@jest/globals': 30.4.1
       '@jest/types': 30.4.1
