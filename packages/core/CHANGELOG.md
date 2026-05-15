@@ -1,5 +1,13 @@
 # @react-md/core
 
+## 7.0.6
+
+### Patch Changes
+
+- c8748d0: Fixed the Select component not showing the focused styles correctly
+- aa57d4b: Bump nanoid from 5.1.9 to 5.1.11
+- 464a7d2: Stopped using deprecated FormEvent and FormEventHandler
+
 ## 7.0.5
 
 ### Patch Changes
