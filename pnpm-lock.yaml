@@ -12,8 +12,8 @@ importers:
         specifier: ^2.31.0
         version: 2.31.0(@types/node@24.12.4)
       '@mlaursen/release-script':
-        specifier: ^0.3.0
-        version: 0.3.0(@types/node@24.12.4)
+        specifier: ^0.4.1
+        version: 0.4.1(@types/node@24.12.4)
       '@trivago/prettier-plugin-sort-imports':
         specifier: ^6.0.2
         version: 6.0.2(prettier@3.8.3)
@@ -1084,8 +1084,8 @@ importers:
         specifier: ^10.2.5
         version: 10.2.5
       react-md:
-        specifier: '>=7.0.6'
-        version: 7.0.6(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6)
+        specifier: workspace:*
+        version: link:../react-md
     devDependencies:
       '@react-md/core':
         specifier: workspace:*
@@ -2692,8 +2692,8 @@ packages:
   '@mlaursen/node-utils@0.1.0':
     resolution: {integrity: sha512-P/G35ehLHriaKbkuXQMTGrnm2a4gbnsP1tcDlx9ZU7/gO2bAc9DcKpt9TkZsXDhSuo2pku863ODfQg9Dr4HIxA==}
 
-  '@mlaursen/release-script@0.3.0':
-    resolution: {integrity: sha512-SADclyPbHVr3YtEtXKFfTEKUBxvINQC2GQA7A9UjMvXWWbgV7QWxv9JFwhUAWLqdO4pItKKPU62jrDYD5mUqSw==}
+  '@mlaursen/release-script@0.4.1':
+    resolution: {integrity: sha512-sjdjSVnbs8u36ECCnoTwvok2LntIHryioIE5Th1tyqBgxeU23wtSG8hYNxuVVwMioj2VdA6yKnlvxQ8z039/Yw==}
 
   '@napi-rs/nice-android-arm-eabi@1.1.1':
     resolution: {integrity: sha512-kjirL3N6TnRPv5iuHw36wnucNqXAO46dzK9oPb0wj076R5Xm8PfUVA9nAFB5ZNMmfJQJVKACAPd/Z2KYMppthw==}
@@ -3037,38 +3037,6 @@ packages:
     resolution: {integrity: sha512-yF9G8vK/LYUTF3Cijd7VC9La3b20F20/J/fgoR4H0B8JGOWnZVZX6+I6+vODPosjmMcpdlUV+gUqJQZp3kLOcw==}
     peerDependencies:
       prettier: '*'
-
-  '@react-md/core@7.0.5':
-    resolution: {integrity: sha512-E7CCFFRKORhj69x6lXCvcMH4o8SbZNdzo5AS3B/HF2/QwA5OKHhXdTafNLM0KNMQGT6KmVnA5PPAGN46rNRT7w==}
-    peerDependencies:
-      '@jest/globals': '>= 29 <=31'
-      '@jest/types': '>= 29 <=31'
-      '@testing-library/dom': '>= 9'
-      '@testing-library/jest-dom': '>= 6'
-      '@testing-library/react': '>= 14'
-      '@testing-library/user-event': '>= 14'
-      react: '>= 19'
-      react-dom: '>= 19'
-      vitest: '>= 3'
-    peerDependenciesMeta:
-      '@jest/globals':
-        optional: true
-      '@jest/types':
-        optional: true
-      '@testing-library/dom':
-        optional: true
-      '@testing-library/jest-dom':
-        optional: true
-      '@testing-library/react':
-        optional: true
-      '@testing-library/user-event':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-      vitest:
-        optional: true
 
   '@rolldown/binding-android-arm64@1.0.1':
     resolution: {integrity: sha512-fJI3I0r3C3Oj/zdBCpaCmBRZYf07xpaq4yCfDDoSFm+beWNzbIl26puW8RraUdugoJw/95zerNOn6jasAhzSmg==}
@@ -8079,38 +8047,6 @@ packages:
   react-is@19.2.6:
     resolution: {integrity: sha512-XjBR15BhXuylgWGuslhDKqlSayuqvqBX91BP8pauG8kd1zY8kotkNWbXksTCNRarse4kuGbe2kIY05ARtwNIvw==}
 
-  react-md@7.0.6:
-    resolution: {integrity: sha512-ZK2hEGk9Uc/isWM/i5MWyO1cuX5uLYNjgbUZv/eJhS5nVeKvxvGnV4bBDWoSM32HhFZ5Wh18i/c9iGQ3GQgYxQ==}
-    peerDependencies:
-      '@jest/globals': '>= 29 <=31'
-      '@jest/types': '>= 29 <=31'
-      '@testing-library/dom': '>= 9'
-      '@testing-library/jest-dom': '>= 6'
-      '@testing-library/react': '>= 14'
-      '@testing-library/user-event': '>= 14'
-      react: '>= 19'
-      react-dom: '>= 19'
-      vitest: '>= 3'
-    peerDependenciesMeta:
-      '@jest/globals':
-        optional: true
-      '@jest/types':
-        optional: true
-      '@testing-library/dom':
-        optional: true
-      '@testing-library/jest-dom':
-        optional: true
-      '@testing-library/react':
-        optional: true
-      '@testing-library/user-event':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
-      vitest:
-        optional: true
-
   react-window@2.2.7:
     resolution: {integrity: sha512-SH5nvfUQwGHYyriDUAOt7wfPsfG9Qxd6OdzQxl5oQ4dsSsUicqQvjV7dR+NqZ4coY0fUn3w1jnC5PwzIUWEg5w==}
     peerDependencies:
@@ -11748,7 +11684,7 @@ snapshots:
       pretty-bytes: 7.1.0
       pretty-ms: 9.3.0
 
-  '@mlaursen/release-script@0.3.0(@types/node@24.12.4)':
+  '@mlaursen/release-script@0.4.1(@types/node@24.12.4)':
     dependencies:
       '@changesets/cli': 2.31.0(@types/node@24.12.4)
       '@inquirer/confirm': 6.0.13(@types/node@24.12.4)
@@ -12015,22 +11951,6 @@ snapshots:
     dependencies:
       make-synchronized: 0.8.0
       prettier: 3.8.3
-
-  '@react-md/core@7.0.5(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6)':
-    dependencies:
-      cnbuilder: 3.1.0
-      nanoid: 5.1.11
-      remove-accents: 0.5.0
-    optionalDependencies:
-      '@jest/globals': 30.4.1
-      '@jest/types': 30.4.1
-      '@testing-library/dom': 10.4.1
-      '@testing-library/jest-dom': 6.9.1
-      '@testing-library/react': 16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      '@testing-library/user-event': 14.6.1(@testing-library/dom@10.4.1)
-      react: 19.2.6
-      react-dom: 19.2.6(react@19.2.6)
-      vitest: 4.1.6(@types/node@24.12.4)(@vitest/coverage-v8@4.1.6)(jsdom@28.1.0)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(sass-embedded@1.99.0)(sass@1.99.0)(terser@5.47.1)(tsx@4.22.0)(yaml@2.9.0))
 
   '@rolldown/binding-android-arm64@1.0.1':
     optional: true
@@ -17723,20 +17643,6 @@ snapshots:
   react-is@18.3.1: {}
 
   react-is@19.2.6: {}
-
-  react-md@7.0.6(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6):
-    dependencies:
-      '@react-md/core': 7.0.5(@jest/globals@30.4.1)(@jest/types@30.4.1)(@testing-library/dom@10.4.1)(@testing-library/jest-dom@6.9.1)(@testing-library/react@16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(vitest@4.1.6)
-    optionalDependencies:
-      '@jest/globals': 30.4.1
-      '@jest/types': 30.4.1
-      '@testing-library/dom': 10.4.1
-      '@testing-library/jest-dom': 6.9.1
-      '@testing-library/react': 16.3.2(@testing-library/dom@10.4.1)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      '@testing-library/user-event': 14.6.1(@testing-library/dom@10.4.1)
-      react: 19.2.6
-      react-dom: 19.2.6(react@19.2.6)
-      vitest: 4.1.6(@types/node@24.12.4)(@vitest/coverage-v8@4.1.6)(jsdom@28.1.0)(vite@8.0.13(@types/node@24.12.4)(esbuild@0.28.0)(sass-embedded@1.99.0)(sass@1.99.0)(terser@5.47.1)(tsx@4.22.0)(yaml@2.9.0))
 
   react-window@2.2.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
     dependencies:

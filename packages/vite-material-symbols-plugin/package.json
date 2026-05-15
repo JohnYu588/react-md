@@ -69,8 +69,8 @@
     "vitest": "^4.1.6"
   },
   "peerDependencies": {
-    "@react-md/core": ">=7.0.5",
-    "react-md": ">=7.0.6",
+    "@react-md/core": "workspace:*",
+    "react-md": "workspace:*",
     "vite": ">= 7"
   },
   "peerDependenciesMeta": {
