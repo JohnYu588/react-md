@@ -164,7 +164,7 @@ $option-selected-icon-spacing: $option-padding-left !default;
 /// layer behavior
 @mixin select-styles($disable-layer: false) {
   @include utils.optional-layer(select, $disable-layer) {
-    .rmd-select-container {
+    .rmd-select-container:where(:not(:focus-within)) {
       outline: 0;
     }
 
