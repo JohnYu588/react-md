@@ -1,4 +1,4 @@
-import { type FormEvent, type RefObject, createRef } from "react";
+import { type RefObject, type SyntheticEvent, createRef } from "react";
 import {
   type Mock,
   afterEach,
@@ -48,7 +48,7 @@ describe("Form", () => {
 
   it("should prevent default form behavior unless disablePreventDefault is enabled", () => {
     const prevented: RefObject<boolean> = { current: false };
-    const onSubmit = vi.fn((event: FormEvent<HTMLFormElement>) => {
+    const onSubmit = vi.fn((event: SyntheticEvent<HTMLFormElement>) => {
       prevented.current = event.isDefaultPrevented();
     });
     const { rerender } = render(

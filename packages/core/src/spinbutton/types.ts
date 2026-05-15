@@ -1,11 +1,11 @@
 import {
   type AriaAttributes,
   type FocusEvent,
-  type FormEvent,
   type HTMLAttributes,
   type KeyboardEvent,
   type Ref,
   type RefObject,
+  type SyntheticEvent,
 } from "react";
 
 import { type FormComponentStates } from "../form/types.js";
@@ -69,7 +69,7 @@ export type SpinButtonGetValueText = (
  * @since 6.4.0
  */
 export type SpinButtonChangeEvent<E extends HTMLElement = HTMLDivElement> =
-  | FormEvent<E>
+  | SyntheticEvent<E>
   | KeyboardEvent<E>
   | FocusEvent<E>;
 

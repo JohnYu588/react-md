@@ -2,7 +2,7 @@
 
 import {
   type ChangeEventHandler,
-  type FormEventHandler,
+  type ReactEventHandler,
   useCallback,
   useRef,
   useState,
@@ -72,7 +72,7 @@ export interface RadioGroupOptions<T extends string | number> {
    *
    * @defaultValue `() => {}`
    */
-  onInvalid?: FormEventHandler<HTMLInputElement>;
+  onInvalid?: ReactEventHandler<HTMLInputElement>;
 }
 
 /** @since 6.0.0 */
@@ -83,7 +83,7 @@ export interface ProvidedRadioGroupProps<V extends string | number> {
   onChange: ChangeEventHandler<HTMLInputElement>;
   error: boolean;
   required: boolean;
-  onInvalid: FormEventHandler<HTMLInputElement>;
+  onInvalid: ReactEventHandler<HTMLInputElement>;
 }
 
 /** @since 6.0.0 */
@@ -124,7 +124,7 @@ export interface CombinedRadioGroupReturnValue<V extends string | number> {
     required?: boolean;
     onChange?: ChangeEventHandler<HTMLInputElement>;
     onCheckedChange?: () => void;
-    onInvalid?: FormEventHandler<HTMLInputElement>;
+    onInvalid?: ReactEventHandler<HTMLInputElement>;
   };
 }
 
