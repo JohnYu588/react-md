@@ -1,0 +1,26 @@
+.container {
+  bottom: 0;
+  left: 50%;
+  position: fixed;
+  transform: translate3d(-50%, 0, 0);
+  z-index: 300;
+
+  :global(.code-block) {
+    margin: 0;
+  }
+
+  :global(.rmd-typography--subtitle-2) {
+    margin: 0;
+    padding-right: 4rem;
+  }
+}
+
+.dialog {
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}

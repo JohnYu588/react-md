@@ -6,6 +6,8 @@ import { useToggle } from "@react-md/core/useToggle";
 import CloseIcon from "@react-md/material-icons/CloseIcon";
 import { type ReactElement, type ReactNode, useEffect } from "react";
 
+import styles from "./DevRegenDialog.module.scss";
+
 export interface DevRegenDialogProps {
   children: ReactNode;
 }
@@ -28,22 +30,17 @@ export function DevRegenDialog({
       disableTransition
       disableScrollLock
       isFocusTypeDisabled={() => true}
-      style={{ position: "relative" }}
+      className={styles.dialog}
       containerProps={{
         enabled: true,
-        style: {
-          position: "fixed",
-          bottom: 0,
-          left: "50%",
-          transform: "translate3d(-50%, 0, 0)",
-          zIndex: 300,
-        },
+        className: styles.container,
       }}
     >
       <Button
+        aria-label="Close"
         onClick={disable}
         buttonType="icon"
-        style={{ position: "absolute", right: 0 }}
+        className={styles.button}
       >
         <CloseIcon />
       </Button>

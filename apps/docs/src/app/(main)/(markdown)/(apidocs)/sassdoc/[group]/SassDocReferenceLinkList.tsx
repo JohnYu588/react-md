@@ -1,3 +1,4 @@
+import { link as styles } from "@react-md/core/link/styles";
 import Link from "next/link.js";
 import { type HTMLAttributes, type ReactNode, forwardRef } from "react";
 import {
@@ -46,7 +47,9 @@ export const SassDocReferenceLinkList = forwardRef<
 
         return (
           <li key={href}>
-            <Link href={href}>{children}</Link>
+            <Link href={href} className={styles()}>
+              {children}
+            </Link>
           </li>
         );
       })}
